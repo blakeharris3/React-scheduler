@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button } from 'semantic-ui-react';
+import { Card } from 'semantic-ui-react';
 
 const News = (props) => {
     const news = props.allNews.map((eachNews, i) => {
@@ -8,10 +8,6 @@ const News = (props) => {
                 <Card.Content>
                 <Card.Header>{eachNews.topic}</Card.Header>
                 <Card.Description>{eachNews.body}</Card.Description>
-                <Card.Content extra>
-                    <Button color='red' onClick={() => props.deleteNews(eachNews._id)}>Delete News</Button>
-                    <Button color='yellow' onClick={() => props.openNews(eachNews)}>Edit News</Button>
-                </Card.Content>
                 <br/>
                 <br/>
                 <br/>

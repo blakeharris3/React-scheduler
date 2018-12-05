@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import 'semantic-ui-css/semantic.min.css';
 // import { BrowserRouter } from 'react-router-dom';
 import Auth from './Auth'
+
 
 const auth = new Auth()
 
@@ -13,6 +15,7 @@ window.setState = (changes) => {
     ReactDOM.render(<App {...state}/>,document.getElementById('root'));
     
     }
+
 /* eslint no-restricted-globals: 0*/
 let username = auth.getProfile().given_name || "Unknown User"
 let initialState = {
