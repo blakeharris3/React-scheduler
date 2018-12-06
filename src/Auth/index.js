@@ -10,7 +10,7 @@ export default class Auth {
     auth0 = new auth0.WebAuth({
         domain: "scheduler-3.auth0.com",
         clientID: "u9KOK9WmpJPC3ABdHqtQ-gTvwG04f4bs",
-        redirectUri: "https://thescheduler.netlify.com/callback",
+        redirectUri: "https://thescheduler.netlify.com",
         audience: "https://scheduler-3.auth0.com/userinfo",
         responseType: "token id_token",
         scope: "openid profile"
