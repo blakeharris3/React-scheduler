@@ -21,7 +21,7 @@ export default class NewsContainer extends Component {
     }
 
     getNews = async () => {
-        const news = await fetch('http://localhost:8000/news');
+        const news = await fetch('https://thawing-crag-77408.herokuapp.com/news');
         const newsParsedJSON = await news.json();
         return newsParsedJSON
     }

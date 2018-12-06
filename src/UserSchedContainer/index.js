@@ -20,7 +20,7 @@ export default class ScheduleContainer extends Component {
     }
 
     getSchedule = async () => {
-        const schedule = await fetch('http://localhost:8000/schedule');
+        const schedule = await fetch('https://thawing-crag-77408.herokuapp.com/schedule');
         const scheduleParsedJSON = await schedule.json();
         return scheduleParsedJSON
     }
