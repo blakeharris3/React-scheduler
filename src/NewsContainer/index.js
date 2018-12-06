@@ -21,7 +21,7 @@ export default class NewsContainer extends Component {
     }
 
     getNews = async () => {
-        const news = await fetch('http://localhost:8000/news');
+        const news = await fetch('https://thawing-crag-77408.herokuapp.com/news');
         const newsParsedJSON = await news.json();
         return newsParsedJSON
     }
@@ -36,7 +36,7 @@ export default class NewsContainer extends Component {
     addNews = async (e, news) => {
         e.preventDefault();
         try {
-            const createdNews = await fetch('http://localhost:8000/news', {
+            const createdNews = await fetch('https://thawing-crag-77408.herokuapp.com/news', {
                 method: 'POST',
                 credentials: 'include',
                 body: JSON.stringify(news),
@@ -60,7 +60,7 @@ export default class NewsContainer extends Component {
     }
 
     deleteNews = async (id) => {
-        const deleteNewsResponse = await fetch('http://localhost:8000/news/' + id, {method: 'DELETE'});
+        const deleteNewsResponse = await fetch('https://thawing-crag-77408.herokuapp.com/news/' + id, {method: 'DELETE'});
         await deleteNewsResponse.json();
         this.setState({news: this.state.news.filter((news) => news._id !== id )})
     }
@@ -69,7 +69,7 @@ export default class NewsContainer extends Component {
         e.preventDefault();
         try {
     
-            const editResponse = await fetch('http://localhost:8000/news/' + this.state.editedNews._id, {
+            const editResponse = await fetch('https://thawing-crag-77408.herokuapp.com/news/' + this.state.editedNews._id, {
                 method: 'PUT',
                 body: JSON.stringify({
                     topic: this.state.editedNews.topic,

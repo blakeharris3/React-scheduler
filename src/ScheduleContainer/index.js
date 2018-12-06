@@ -26,7 +26,7 @@ export default class ScheduleContainer extends Component {
     }
 
     getSchedule = async () => {
-        const schedule = await fetch('http://localhost:8000/schedule');
+        const schedule = await fetch('https://thawing-crag-77408.herokuapp.com/schedule');
         const scheduleParsedJSON = await schedule.json();
         return scheduleParsedJSON
     }
@@ -45,7 +45,7 @@ export default class ScheduleContainer extends Component {
         e.preventDefault();
         console.log('this is hitting')
         try {
-            const createdSchedule = await fetch('http://localhost:8000/schedule', {
+            const createdSchedule = await fetch('https://thawing-crag-77408.herokuapp.com/schedule', {
                 method: 'POST',
                 credentials: 'include',
                 body: JSON.stringify(schedule),
@@ -70,7 +70,7 @@ export default class ScheduleContainer extends Component {
     }
 
     deleteSchedule = async (id) => {
-        const deleteScheduleResponse = await fetch('http://localhost:8000/schedule/' + id, {method: 'DELETE'});
+        const deleteScheduleResponse = await fetch('https://thawing-crag-77408.herokuapp.com/schedule/' + id, {method: 'DELETE'});
         await deleteScheduleResponse.json();
         this.setState({schedules: this.state.schedules.filter((schedule) => schedule._id !== id )})
     }
@@ -79,7 +79,7 @@ export default class ScheduleContainer extends Component {
         e.preventDefault();
         try {
     
-            const editResponse = await fetch('http://localhost:8000/schedule/' + this.state.editedSchedule._id, {
+            const editResponse = await fetch('https://thawing-crag-77408.herokuapp.com/schedule/' + this.state.editedSchedule._id, {
                 method: 'PUT',
                 body: JSON.stringify({
                     date: this.state.editedSchedule.date,
