@@ -27,6 +27,12 @@ By:
 - React
 - MongoDB
 - Mongoose
+
+---
+## Keys
+-To view Scheduler as an ADMIN, enter 1234 as key
+-To view Scheduler as a USER, enter 1111 as key
+
 ---
 ## User Stories
 -Super User will be able to register with information and a validated SUPERUSER Key
@@ -40,5 +46,7 @@ By:
 ---
 ## Struggles
 -Re-routing users after entering the key. I would switch to react router instead of switch statements due to the browser resetting the state back to the origin state.
+
 -Figuring out the setup of allowing admin to Create/Edit/Delete Schedules or News, while the users can only read them.
+
 -Different setup using Auth0, changes layout of index.js as well ass app.js
