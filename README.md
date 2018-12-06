@@ -6,7 +6,7 @@ By:
 ---
 
 ## Wireframe
-![News Page](../images/news.png)
+![News Page](./images/news.png)
 ![Schedule Page](./images/schedule.png)
 ![Register Page](./images/register.png)
 ![Login Page](./images/login.png)
