@@ -11,7 +11,7 @@ export default class Auth {
         domain: "blake-harris.auth0.com",
         clientID: "uyuC1V2frSFtdf2eGm1TVpv2Rdyk8JqJ5",
         redirectUri: "https://thescheduler.netlify.com/callback",
-        audience: "https://scheduler-3.auth0.com/userinfo",
+        audience: "https://blake-harris.auth0.com/userinfo",
         responseType: "token id_token",
         scope: "openid profile"
     })
