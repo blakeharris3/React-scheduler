@@ -13,10 +13,6 @@ const EditSchedule = (props) => {
           </Label>
           <Form.Input type='text' name='date' value={props.editedSchedule.date} onChange={props.handleChange}/>
           <Label>
-            Photo:
-          </Label>
-          <Form.Input type='file' name='photo' value={props.editedSchedule.photo} onChange={props.handleChange}/>
-          <Label>
             Info:
           </Label>
           <Form.Input type='text' name='info' value={props.editedSchedule.info} onChange={props.handleChange}/>

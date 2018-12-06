@@ -1,18 +1,29 @@
 import React, {Component} from "react";
+import { Card } from 'semantic-ui-react';
+
+const styleLink = {
+    color: 'white',
+    textDecoration: 'underline'
+};
 
 export default class NotFound extends Component {
     render(){
         return (
             <div>
+                <Card.Group className="centered">
+                <br/>
+                <br/>
                 <h1>
                     Page Not Found
-                    <img src='https://www.meme-arsenal.com/memes/780f55a9914ecd4abd699afa499af139.jpg' alt="Joey404"/>
                     <br/>
                     <br/>
-                </h1>
                 <p>
-                    <a href="/secret">Try Key Again</a>
+                    <a href="/secret" style={styleLink}>Enter Key Again</a><br/>
                 </p>
+                </h1>
+                    <br/>
+                    <br/>
+                </Card.Group>
             </div>
         )
     }

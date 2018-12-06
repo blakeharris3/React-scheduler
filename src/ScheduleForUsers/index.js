@@ -1,19 +1,19 @@
 import React from "react";
-import { Card } from 'semantic-ui-react';
+import { Card, Header } from 'semantic-ui-react';
 
 const Schedules = (props) => {
     const schedules = props.allSchedules.map((eachSchedule, i) => {
         return (
-            <Card key={eachSchedule._id}>
+            <nav key={eachSchedule._id}>
                 <Card.Content>
-                <Card.Header>{eachSchedule.date}</Card.Header>
+                <Header>{eachSchedule.date}</Header>
+                <h4>{eachSchedule.info}</h4>
                 <Card.Description><img src={eachSchedule.photo} alt="Schedule"/></Card.Description>
-                <Card.Description>{eachSchedule.info}</Card.Description>
                 <br/>
                 <br/>
                 <br/>
               </Card.Content>
-            </Card>
+            </nav>
         )
     })
 
@@ -23,9 +23,9 @@ const Schedules = (props) => {
     return (
         <div>
                 <h3>Schedules</h3>
-                <Card.Group className="centered">
+                <nav className="centered">
                 {schedules}
-                </Card.Group>
+                </nav>
         </div>
     )
 }
