@@ -6,18 +6,18 @@ By:
 ---
 
 ## Wireframe
-![News Page](./images/news.png)
-![Schedule Page](./images/schedule.png)
-![Register Page](./images/register.png)
-![Login Page](./images/login.png)
+![News Page](./src/images/news.png)
+![Schedule Page](./src/images/schedule.png)
+![Register Page](./src/images/register.png)
+![Login Page](./src/images/login.png)
 
 ---
 ## Data Flow
-![Login Page](./images/data-flow.png)
+![Login Page](./src/images/data-flow.png)
 
 ---
 ## ERD
-![ERD](./images/erd.png)
+![ERD](./src/images/erd.png)
 
 ---
 ## Technologies
