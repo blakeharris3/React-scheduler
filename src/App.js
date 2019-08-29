@@ -10,6 +10,7 @@ import ScheduleContainer from './ScheduleContainer';
 import NewsContainer from './NewsContainer'
 document.body.style.backgroundColor = '#00C5FF'
 
+
 class App extends Component {
     state = {
         key: "",
